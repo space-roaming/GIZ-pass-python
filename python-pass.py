@@ -15,12 +15,12 @@ class solution:
             for j in range(i, n):
                 flag = 1
 
-                # Check palindrome
+                
                 for k in range(0, ((j - i) // 2) + 1):
                     if (s[i + k] != s[j - k]):
                         flag = 0
 
-                # Palindrome
+                
                 if (flag != 0 and (j - i + 1) > maxLength):
                     start = i
                     maxLength = j - i + 1
